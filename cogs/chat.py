@@ -12,7 +12,7 @@ class chatgpt1(commands.Cog):
     @commands.command(name='chat')
     async def chat(self, ctx, *, args):
         user_query = ctx.message.content
-        openai_api_key = "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"
+        openai_api_key = "yourkey"
         response = openai.Completion.create(api_key=f'{openai_api_key}',
                                             model="text-davinci-003",
                                             prompt=user_query,
